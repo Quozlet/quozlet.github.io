@@ -1,0 +1,31 @@
+{
+  "name": "quozlet.github.io",
+  "version": "1.0.0",
+  "description": "Static website for quozlet.net",
+  "main": "index.html",
+  "scripts": {
+    "build": "postcss app.tailwind > app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quozlet/quozlet.github.io.git"
+  },
+  "author": "Quozlet",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Quozlet/quozlet.github.io/issues"
+  },
+  "homepage": "https://github.com/Quozlet/quozlet.github.io#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "cssnano": "latest",
+    "husky": "latest",
+    "postcss-cli": "latest",
+    "tailwindcss": "latest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run build && git add ."
+    }
+  }
+}
