@@ -1,6 +1,6 @@
 {
   "name": "quozlet.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Static website for quozlet.net",
   "main": "index.html",
   "scripts": {
@@ -17,15 +17,17 @@
   },
   "homepage": "https://github.com/Quozlet/quozlet.github.io#readme",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "@fullhuman/postcss-purgecss": "latest",
+    "autoprefixer": "latest",
     "cssnano": "latest",
     "husky": "latest",
     "postcss-cli": "latest",
+    "rimraf": "^3.0.2",
     "tailwindcss": "latest"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run build && git add ."
+      "pre-commit": "rimraf yarn.lock && yarn install && yarn run build && git add ."
     }
   }
 }

@@ -7,46 +7,53 @@
     <title>Quozlet.net</title>
 </head>
 
-<body class="min-h-screen sm:max-h-screen sm:min-h-0 bg-blue-800">
+<body class="w-auto bg-gray-900 font-sans overflow-scroll mb-40">
     <header class="align-bottom">
         <section>
-            <nav class="flex items-center justify-between flex-wrap bg-teal-700 p-1 font-semibold font-sans">
-                <h1 class="flex items-center text-white text-xl tracking-tight"><a href="/">Quozlet.net</a>
-                </h1>
-                <ul class="flex border-b align-bottom text-white">
-                    <li class="-mb-px mr-1"><a
-                            class="inline-block bg-teal-800 border-b border-l border-r rounded-t py-2 px-4"
-                            href="/">About</a></li>
-                    <li class="mr-1"><a class="inline-block py-2 px-4 hover:text-gray-500"
-                            href="/minecraft.html">Minecraft Server</a></li>
-                    <li class="mr-1"><a class="inline-block py-2 px-4 hover:text-gray-500"
+            <nav class="flex items-center justify-between flex-wrap bg-teal-900 p-6">
+                <a href="/"
+                    class="font-sans flex-shrink-0 text-white mr-6 font-semibold text-5xl tracking-tight">Quozlet.net</a>
+                <ul class="flex border-0 align-bottom shadow sm:text-2xl text-xl text-gray-400">
+                    <li class="mr-1"><a class="inline-block py-2 px-4 text-white bg-teal-800" href="/">About</a></li>
+                    <li class="mr-1"><a class="inline-block py-2 px-4 text-gray-400 hover:text-white hover:bg-teal-800"
                             href="https://github.com/Quozlet/quozlet.github.io">Source Code</a></li>
                 </ul>
             </nav>
         </section>
     </header>
     <main>
-        <h1 class="bg-gray-200 shadow-lg text-5xl capitalize flex-wrap font-sans font-semibold text-center">
-            <div class="text-center">Welcome to Quozlet.net</div>
-        </h1>
         <div
-            class="bg-gray-200 max-w-screen-md mx-auto rounded-lg mt-5 border-t flex justify-center border-l border-r font-sans text-left text-xl">
-            <div class="px-6 py-4 shadow-lg">
-                <div class="font-bold text-xl m-2">Introduction</div>
-                <div class="w-full rounded overflow-hidden text-left text-2xl">
-                    <p>While this website currently does not have much content, it will likely expand over time. I
+            class="bg-gray-800 max-w-screen-md mx-auto rounded-lg mt-5 border flex justify-left font-sans text-left text-xl shadow">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl m-2 text-gray-500 sm:text-3xl">Introduction</div>
+                <div
+                    class="text-gray-300 w-full rounded overflow-hidden text-left sm:text-2xl text-l leading-loose sm:leading-relaxed">
+                    <p class="mb-4">While this website currently does not have much content, it will likely expand over
+                        time. I
                         consider it a personal exercise in both design and web technologies, and as such it will
                         probably look horrifying and use technologies I have no excuse to be using. Nevertheless, it
                         will remain both open-source and reasonably tested on modern browsers.</p>
-                    <p>I'm a minimal person, and for that reason this will probably remain very static and lightweight.
+                    <p class="mb-4">I'm a minimal person, and for that reason this will probably remain very static and
+                        lightweight.
                         Right now that means only using <a class="underline tracking-tight"
                             href="https://tailwindcss.com/">Tailwind CSS</a> for help styling.</p>
                 </div>
             </div>
         </div>
+        <div
+            class="bg-gray-800 max-w-screen-md mx-auto justify-center rounded-lg mt-5 border flex justify-left font-sans text-left text-xl shadow">
+            <div class="px-6 py-4">
+                <div
+                    class="text-gray-300 w-full rounded overflow-hidden sm:text-2xl text-l leading-loose sm:leading-relaxed">
+                    <p class="mb-4">There's a vanilla Minecraft server hosted at:</p>
+                    <p class="container mx-auto flex-none content-center bg-black font-mono text-white text-center">
+                        minecraft.quozlet.net</p>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
-<footer class="bottom-0 fixed bg-teal-100 w-screen">
+<footer class="bottom-0 mt-4 fixed bg-teal-200 w-screen">
     <strong>Copyright</strong><b> 2020</b> Quozlet (<em>Licensed under the <a class="hover:text-blue-900 font-mono"
             href="https://opensource.org/licenses/BSD-3-Clause">3-Clause BSD License</a>.</em>)
 </footer>
